@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link rel="icon" href="images/calculator.png"/>
+    <title>Calculate It</title>
+</head>
+<body>
+    <main class="">
+        <div class="container">
+
+            <!-- Left side of page with user input fields -->
+            <!-- Entered Details -->
+
+        <div class="first">
+            <h3>Enter Meal Details</h3>
+            <hr>
+            <h5>Base Meal Price: $</h5> <input id="mealInput" type="number" step="any" placeholder="##.##"><br>
+            <h5>Tax Rate: %</h5><input id="taxInput" type="number" step="any" placeholder="##"><br>
+            <h5>Tip Percentage: %</h5><input id="tipping" type="number" step="any" placeholder="##"><br>
+
+            <div>
+                <button id="submit">Submit</button><button id="cancel">Cancel</button>
+            </div>
+        </div>
+
+
+
+        <!-- Center of page with customer and employee totals -->
+        <!-- Customer Charges -->
+        <div class="middle">
+        <div class="">
+            <h3>Customer Charges</h3>
+            <hr>
+            <h5 id="subtotal">Subtotal:</h5><br>
+            <h5 id="tip">Tip</h5><br>
+            
+            <h5 id="total">Total</h5><br>
+        </div>
+
+        
+
+        <!-- Employee Earnings -->
+
+        <div class="">
+            <h3>My Earnings</h3>
+            <hr>
+            <h5 id="tipTotal">Tip Total: </h5><br>
+            <h5 id="mealCount">Meal Count: </h5><br>
+            <h5 id="averageTip">Average Tip Per Meal</h5>
+        </div>
+        </div>
+
+
+
+        <!-- Right side of page at the bottom is the RESET button -->
+
+        <div class="bottom">
+            <button id="reset">Reset</button>
+        </div>
+
+        </div>
+    </main>
+<footer>
+    <p>© Lili Fuentes  |  2020</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous" type="text/javascript"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+
